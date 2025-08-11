@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "ghcr.io/safedep/vet:latest",
+        "-l",
+        "/tmp/vet-mcp.log",
+        "server",
+        "mcp"
+      ]
+    }
+  }
+}
